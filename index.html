@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Conversor de bases</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Conversor de bases</h1>
+      <p class="sub">
+        Digite um número, escolha a base dele e veja todas as outras ao mesmo
+        tempo.
+      </p>
+      <div class="card">
+        <div class="row">
+          <div class="f1">
+            <label for="val">Número</label
+            ><input
+              id="val"
+              value="255"
+              autocomplete="off"
+              spellcheck="false"
+            />
+          </div>
+          <div class="f2">
+            <label for="base">Base de origem</label>
+            <select id="base">
+              <option value="10">Decimal (10)</option>
+              <option value="2">Binário (2)</option>
+              <option value="8">Octal (8)</option>
+              <option value="16">Hexadecimal (16)</option>
+              <option value="32">Base 32</option>
+              <option value="36">Base 36</option>
+            </select>
+          </div>
+        </div>
+        <p id="err" role="alert"></p>
+        <ul id="out"></ul>
+        <p class="hint">
+          Use «Usar» em qualquer linha para converter no sentido contrário.
+          Números negativos (com «-») e muito grandes funcionam.
+        </p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
